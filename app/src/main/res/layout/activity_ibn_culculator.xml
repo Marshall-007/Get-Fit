@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".IbnCulculator">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="5dp"
+        android:text="BMI Calculator "
+        android:textColor="#ffff"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintEnd_toEndOf="@+id/textView25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtHeight"
+        android:layout_width="162dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:hint="Enter Height "
+        android:inputType="number"
+        android:maxLength="3"
+        android:paddingLeft="10dp"
+        android:textColor="@color/design_default_color_on_secondary"
+        app:layout_constraintBottom_toTopOf="@+id/txtWeight"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <EditText
+        android:id="@+id/txtWeight"
+        android:layout_width="174dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:hint="Enter Weight "
+        android:inputType="number"
+        android:maxLength="3"
+        android:paddingLeft="10dp"
+        android:textColor="@color/design_default_color_on_secondary"
+        app:layout_constraintBottom_toTopOf="@+id/btnGetResults"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeight" />
+
+    <Button
+        android:id="@+id/btnGetResults"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="393dp"
+        android:background="@drawable/button_round"
+        android:text="Get Results "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/txtWeight" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="380dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:text="Please enter your current height and weight to get your IBM results "
+        android:textColor="#ffff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtHeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="59dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="151dp"
+        android:text="Cm"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtHeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtHeight" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="72dp"
+        android:text="Kg"
+        android:textSize="18sp"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGetResults"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtWeight"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#0f3b52">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView android:src="@drawable/fpor4"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!--  Name Label -->
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+
+            android:layout_height="40dp"
+            android:hint="Enter your name "
+            android:drawableLeft="@drawable/ic_name"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_round"
+            android:layout_marginBottom="10dp"
+            android:inputType="textCapWords" />
+
+
+        <!-- email Label -->
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter your Email"
+            android:drawableLeft="@drawable/ic_email"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_round"
+            android:inputType="textEmailAddress" />
+
+
+        <!-- Password Label -->
+
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter your Password "
+            android:drawableLeft="@drawable/ic_pass"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_round"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"/>
+
+        <TextView android:id="@+id/link_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Already a member? Login"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

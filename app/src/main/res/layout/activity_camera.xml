@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".camera">
+
+
+    <EditText
+        android:id="@+id/txtDiscription"
+        android:layout_width="251dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="156dp"
+        android:background="#ffff"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Please discribe  the image  taken"
+        android:inputType="textMultiLine"
+        android:textSize="19sp"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <ImageView
+        android:id="@+id/snap"
+        android:layout_width="214dp"
+        android:layout_height="155dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:srcCompat="@drawable/fpor4" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:contentDescription="Enter the infomation of the food taken"
+        android:text="Discription"
+        android:textColor="#ffff"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/txtDiscription"
+        app:layout_constraintStart_toStartOf="@+id/txtDiscription"
+        app:layout_constraintTop_toBottomOf="@+id/snap" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Take a picture "
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/snap"
+        app:layout_constraintStart_toStartOf="@+id/snap"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/happy_monkey"
+        android:text="Record Meals"
+        android:textColor="#ffff"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-29dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="115dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_round"
+        android:text="Save "
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/txtDiscription" />
+
+    <TextView
+        android:id="@+id/instructionCam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Click on the camera to take a picture...."
+        android:textColor="#ffff"
+        app:layout_constraintStart_toStartOf="@+id/snap"
+        app:layout_constraintTop_toBottomOf="@+id/snap" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

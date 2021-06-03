@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "947077624204",
+    "firebase_url": "https://getfitt-28253.firebaseio.com",
+    "project_id": "getfitt-28253",
+    "storage_bucket": "getfitt-28253.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947077624204:android:e9794df293808c6edb66a9",
+        "android_client_info": {
+          "package_name": "com.example.getfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947077624204-0eea7t0ucrh93aggm37o6da1vnl13kmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZzHAVCAwLLkFBaVBFKQvpigkLL2S0n-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947077624204-0eea7t0ucrh93aggm37o6da1vnl13kmj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
